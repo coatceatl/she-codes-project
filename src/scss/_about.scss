@@ -1,3 +1,45 @@
+.inner-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.col-wrapper {
+  display: flex;
+}
+.col-left {
+  width: 30%;
+}
+.col-right {
+  width: 70%;
+}
+.card-header {
+  padding: 0;
+  background: none;
+  border: 0;
+  & .title {
+    border-bottom: 1px solid #ccc;
+  }
+}
+.btn.btn-title {
+  display: block;
+  color: #222;
+  padding: 12px 0;
+  background: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  border: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffa502;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 @media(max-width: 768px) {
   .inner {
     padding-top: 0;
