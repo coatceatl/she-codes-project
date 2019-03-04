@@ -36,3 +36,13 @@
     outline: none;
   }
 }
+
+@media(max-width: 768px) {
+  .navbar-logo {
+    font-size: 26px;
+    margin: 0 auto;
+  }
+  .navbar-menu {
+    display: none;
+  }
+}
