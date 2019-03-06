@@ -113,9 +113,17 @@ $shadows-big:    multiple-box-shadow(100);
   position: absolute;
   width: 80px;
   z-index: 100;
-  animation: orbita 6s linear infinite;
+  animation: orbita 10s linear infinite;
 }
-
+.satellite-1 {
+  width: 6em;
+  height: 6em;
+}
+.satellite-2 {
+  width: 4em;
+  height: 4em;
+  animation: orbita-2 8s linear infinite;
+}
 
 /*animation*/
   @keyframes animStar {
@@ -136,11 +144,19 @@ $shadows-big:    multiple-box-shadow(100);
 }
 
 @keyframes orbita {
-from {
+  from {
     transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
   to {
     transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+@keyframes orbita-2 {
+  from {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg);
   }
 }
 
