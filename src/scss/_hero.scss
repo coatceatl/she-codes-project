@@ -90,7 +90,7 @@ $shadows-big:    multiple-box-shadow(100);
   width: 40%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   animation: fadein 10s ease;
 }
@@ -101,12 +101,19 @@ $shadows-big:    multiple-box-shadow(100);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20%;
 }
 .global {
   opacity: 1;
+  z-index: 100;
   width: 100%;
   max-width: 400px;
+  position: relative;
+}
+.satellite {
+  position: absolute;
+  width: 80px;
+  z-index: 100;
+  animation: orbita 6s linear infinite;
 }
 
 
@@ -128,6 +135,14 @@ $shadows-big:    multiple-box-shadow(100);
     }
 }
 
+@keyframes orbita {
+from {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
 
 @media(max-width: 768px) {
   .centred h1 {
