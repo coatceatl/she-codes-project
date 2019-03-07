@@ -10,10 +10,12 @@
   display: flex;
 }
 .col-left {
-  width: 30%;
+  width: 50%;
+  background: url(../img/about.jpg) center center/contain no-repeat;
+  margin-right: 20px;
 }
 .col-right {
-  width: 70%;
+  width: 50%;
 }
 .card-header {
   padding: 0;
@@ -58,6 +60,20 @@
   }
   .subtitle {
     font-size: 14px;
+  }
+  .col-wrapper {
+    flex-direction: column;
+  }
+  .col-left {
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .col-right {
+    width: 100%;
+  }
+  .accordion-wrapper {
+    padding: 15px;
   }
 }
 
