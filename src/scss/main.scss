@@ -31,6 +31,15 @@ a {
   font-size: 24px;
   text-transform: uppercase;
 }
+.subtitle:after {
+  content: '';
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #ffa502;
+  display: block;
+  margin: 20px auto;
+}
 .yellow {
   color: #ffa502;
 }
