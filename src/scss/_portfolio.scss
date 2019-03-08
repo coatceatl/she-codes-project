@@ -1,3 +1,6 @@
+.categories {
+  height: 100%;
+}
 .type {
   display: flex;
   justify-content: space-around;
@@ -18,5 +21,33 @@
   &.active {
     color: #fff;
     background-color: #ffa502;
+  }
+}
+.portfolio-list {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  width: 33%;
+  margin-bottom: 20px;
+}
+@media(max-width: 992px) {
+  .type {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .type-icon {
+    width: 140px;
+  }
+  .type-link {
+    font-size: 12px;
+  }
+  .type-icon:nth-child(2n+1) {
+    margin: 0 0 35px 10px;
+  }
+  .type-icon:nth-child(odd) {
+    margin: 0 10px 35px 5px;
   }
 }
