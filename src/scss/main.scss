@@ -43,6 +43,10 @@ a {
 .yellow {
   color: #ffa502;
 }
+.col-3 {
+  width: 33%;
+  margin-bottom: 20px;
+}
 
 @import '_header.scss';
 @import '_hero.scss';
