@@ -16,6 +16,8 @@
 }
 .navbar-logo {
   color: #fff;
+  display: flex;
+  align-items: center;
 }
 .navbar-menu {
   width: 60%;
@@ -34,6 +36,15 @@
   &:focus {
     color: #ffa502;
     outline: none;
+  }
+}
+.logo {
+  height: 65px;
+  margin-right: 20px;
+  transform: rotate(-100deg);
+  &:hover {
+    transform: rotate(160deg);
+    transition: all 0.2s ease;
   }
 }
 
