@@ -36,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 10px;
 }
 .portfolio-inner {
   display: flex;
@@ -72,9 +73,9 @@
   height: 100%;
   opacity: 0;
   transition: .45s ease-in-out;
-  &:hover {
-    opacity: 1;
-  }
+}
+.portfolio-content:hover .portfolio-overlay {
+  opacity: 1;
 }
 .portfolio-title {
   font-family: $font-family;
