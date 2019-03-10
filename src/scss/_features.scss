@@ -1,3 +1,30 @@
 .features {
   padding-top: 0;
 }
+.features-list {
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item {
+  display: flex;
+}
+.features-icon {
+  min-width: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 10px;
+}
+.features-icon i {
+  font-size: 36px;
+  color: #ffa502;
+}
+.features-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.features-text {
+  margin-left: 20px;
+  padding-right: 15px;
+}
