@@ -13,4 +13,6 @@ $( document ).ready(function() {
     $icon.toggleClass("img-open");
 
   });
+
 });
+
